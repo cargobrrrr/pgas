@@ -1,0 +1,146 @@
+body {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin: auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color);
+    padding: 0;
+    display: flow-root;
+}
+#equations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px var(--shadow-color);
+    overflow: hidden;
+    padding: 0;
+    background-color: var(--third-color);
+}
+
+.card:hover {
+    scale: 1.08;
+    transition: 0.3s;
+}
+
+.card img {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    z-index: 9;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.card figcaption {
+    display: flex;
+    color: var(--figcaption-color);
+    z-index: 10;
+    transition: 0.3s;
+    opacity: 1;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 20px;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-top: 4px;
+}
+
+.card:hover figcaption {
+    color: var(--hover-color);
+    scale: 1.15;
+}
+
+#title {
+  margin: 0 47.4% 0 auto;
+  font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topEquationsCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 10px;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px var(--shadow-color);
+    overflow: hidden;
+    padding: 0;
+    background-color: var(--third-color);
+    max-width: 400px;
+}
+
+.topEquationsCard:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+.topEquationsCard img {
+    width: 150px;
+    height: 150px;
+    z-index: 9;
+    flex-shrink: 0;
+}
+
+.topEquationsCard figcaption {
+    display: flex;
+    color: var(--figcaption-color);
+    z-index: 10;
+    transition: 0.3s;
+    opacity: 1;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 20px 0 20px;
+    margin: 5px 0 0 0;
+}
+
+.topEquationsCard p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: var(--figcaption-color);
+    transition: 0.3s;
+    margin: 10px 20px;
+}
+
+.topEquationsCard:hover p {
+    transition: 0.3s;
+    overflow-wrap: break-word;
+}
+
+.topEquationsCard:hover figcaption {
+    color: var(--hover-color);
+    scale: 1.15;
+}
+
+.topEquationInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 10px;
+    color: var(--figcaption-color);
+    height: 100%;
+    justify-content: flex-start;
+}
+
+#top-equations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #222831;
+    --secondary-color: #272f3a;
+    --secondary-color-transparent: #272f3ad2;
+    --third-color: #393E46;
+    --text-color: whitesmoke;
+    --figcaption-color: #DFD0B8;
+    --hover-color: #dda64d;
+    --shadow-color: #1b2027;
+}
+
+.dark-theme {
+    --primary-color: #111111;
+    --secondary-color: #181818	;
+    --secondary-color-transparent: #181818d2;
+    --third-color: #282828;
+    --text-color: rgb(246, 246, 246);
+    --figcaption-color: #DFD0B8;
+    --hover-color: #dda64d;
+    --shadow-color: #0c0c0c;
+}
+
+.light-theme {
+    --primary-color: #ffffff;
+    --secondary-color: #f3f3f3;
+    --secondary-color-transparent: #f3f3f3d2;
+    --third-color: #dfdfdf;
+    --text-color: rgb(36, 36, 36);
+    --figcaption-color: #2d2d2d;
+    --hover-color: #dda64d;
+    --shadow-color: #8b8b8b;
+}
+
+.green-theme {
+    --primary-color: #153a1c;
+    --secondary-color: #1E5128	;
+    --secondary-color-transparent: #1E5128d2;
+    --third-color: #4E9F3D;
+    --text-color: whitesmoke;
+    --figcaption-color: #D8E9A8;
+    --hover-color: #dda64d;
+    --shadow-color: #0e2512;
+}
+
+.purple-theme {
+    --primary-color: #660066;
+    --secondary-color: #800080;
+    --secondary-color-transparent: #800080d2;
+    --third-color: #be29ec;
+    --text-color: whitesmoke;
+    --figcaption-color: #efbbff;
+    --hover-color: #dda64d;
+    --shadow-color: #660066;
+}
+
+.pink-theme {
+    --primary-color: #ff0080;
+    --secondary-color: #ff40c0;
+    --secondary-color-transparent: #ff40c0d2;
+    --third-color: #ff80ff;
+    --text-color: whitesmoke;
+    --figcaption-color: #92005c;
+    --hover-color: #e83dc0;
+    --shadow-color: #9f2c79;
+}
+
+aside {
+    position: fixed;
+    height: 100%;
+    margin-top: 0;
+    background-color: var(--secondary-color-transparent);
+    text-align: center;
+    width: 15%;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    z-index: 10;
+    border-right: 0.5px solid var(--third-color);
+}
+
+aside h2 {
+    margin-top: 0;
+    padding: 5px 0;
+}
+
+.themes {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: var(--text-color);
+    background-color: var(--third-color);
+}
+
+.color-option {
+    display: block;
+    margin: 10px 20px;
+}
+
+#color-selectors {
+    display: none;
+}
+
+.color-picker {
+    border: none;
+    outline: none;
+    background-color: var(--third-color);
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+.container {
+    width: 85%;
+    margin-left: 15%;
+}
+
+.settings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    margin-left: 15%;
+    z-index: 10;
+    background-color: var(--primary-color);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-options {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-button {
+    background-color: var(--third-color);
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 16px;
+    color: var(--text-color);
+    font-weight: bold;
+    margin: 10px 0;
+    transition: 0.3s;
+    box-shadow: 2px 2px 3px var(--shadow-color);
+}
+
+.settings-button:hover {
+    scale: 1.10;
+    color: var(--hover-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.settings-button:active {
+    background-color: var(--secondary-color);
+    transition: 0.15s;
+}
+
+#theme-button {
+    background-color: var(--secondary-color);
+}
