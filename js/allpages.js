@@ -73,7 +73,8 @@ function clearCustomStyles() {
     }
 }
 
-function openSettings() {
+function openSettings(e) {
+    e.preventDefault
     settings.style.display = 'flex'
 }
 
