@@ -3,7 +3,7 @@ const colorSelectors = document.getElementById('color-selectors')
 const customStyleColor = document.getElementsByClassName('color-picker')
 const settingsOpenButton = document.getElementById('settings-open-button')
 const settings = document.getElementById('settings')
-const closeSettings = document.getElementById('close-settings')
+const closeSettingsButton = document.getElementById('close-settings')
 
 if (localStorage.getItem('theme')) {
     themeSelector.value = localStorage.getItem('theme')
@@ -87,6 +87,6 @@ for (const color of customStyleColor) {
 
 themeSelector.addEventListener('change', renderTheme)
 
-closeSettings.addEventListener('click', closeSettings)
+closeSettingsButton.addEventListener('click', closeSettings)
 
 settingsOpenButton.addEventListener('click', openSettings)
