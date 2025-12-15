@@ -1,6 +1,8 @@
 const themeSelector = document.getElementById('theme-selector')
 const colorSelectors = document.getElementById('color-selectors')
 const customStyleColor = document.getElementsByClassName('color-picker')
+const settingsOpenButton = document.getElementById('settings-open-button')
+const settings = document.getElementById('settings')
 
 if (localStorage.getItem('theme')) {
     themeSelector.value = localStorage.getItem('theme')
@@ -70,8 +72,14 @@ function clearCustomStyles() {
     }
 }
 
+function openSettings() {
+    settings.style.display = 'flex'
+}
+
 for (const color of customStyleColor) {
     color.addEventListener('change', editCustomTheme)
 }
 
 themeSelector.addEventListener('change', renderTheme)
+
+settingsOpenButton.addEventListener('click', openSettings)
