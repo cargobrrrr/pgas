@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Otonic</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/allpages.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Code that will be added to all pages -->
+        <aside id="sidebar">
+            <h2>Otonic</h2>
+        </aside>
+        <div class="settings">
+            <div class="settings-options">
+                <button class="settings-button" id="theme-button">Themes</button>
+                <button class="settings-button" id="website-button">Website</button>
+                <button class="settings-button" id="games-button">Games</button>
+            </div>
+            <div id="themes">
+                <h2>Choose a theme</h2>
+                <select id="theme-selector" class="themes">
+                    <option value="default">Default</option>
+                    <option value="dark-theme">Dark</option>
+                    <option value="light-theme">Light</option>
+                    <option value="green-theme">Green</option>
+                    <option value="purple-theme">Purple</option>
+                    <option value="pink-theme">Pink</option>
+                    <option value="custom-theme">Custom</option>
+                </select>
+                <div id="color-selectors">
+                    <div class="color-option">
+                        <label for="primary-color" class="color-label">Main color:</label>
+                        <input type="color" name="primary-color" value="#222831" class="color-picker" id="primary-color">
+                    </div>
+                    <div class="color-option">
+                        <label for="secondary-color" class="color-label">Secondary color:</label>
+                        <input type="color" name="secondary-color" value="#272f3a" class="color-picker">
+                    </div>
+                    <div class="color-option">
+                        <label for="third-color" class="color-label">Third color:</label>
+                        <input type="color" name="third-color" value="#393E46" class="color-picker">
+                    </div>
+                    <div class="color-option">
+                        <label for="text-color" class="color-label">Text color:</label>
+                        <input type="color" name="text-color" value="#F5F5F5" class="color-picker">
+                    </div>
+                    <div class="color-option">
+                        <label for="figcaption-color" class="color-label">Equation title color:</label>
+                        <input type="color" name="figcaption-color" value="#DFD0B8" class="color-picker">
+                    </div>
+                    <div class="color-option">
+                        <label for="hover-color" class="color-label">Hover color:</label>
+                        <input type="color" name="hover-color" value="#dda64d" class="color-picker">
+                    </div>
+                    <div class="color-option">
+                        <label for="shadow-color" class="color-label">Shadow color:</label>
+                        <input type="color" name="shadow-color" value="#0c0c0c" class="color-picker">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of all pages code -->
+        <div class="container">
+            <h2>Top Equations</h2>
+            <div id="top-equations">
+            </div>
+            <h2>All Equations</h2>
+            <div id="equations">
+            </div>
+        </div>
+    </body>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/allpages.js" type="module"></script>
+</html>
