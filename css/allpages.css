@@ -176,3 +176,7 @@ aside a {
 aside a:visited {
     color: var(--text-color)
 }
+
+aside a:active {
+    color: var(--text-color)
+}
