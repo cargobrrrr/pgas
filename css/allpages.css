@@ -168,3 +168,11 @@ aside h2 {
 #theme-button {
     background-color: var(--secondary-color);
 }
+
+aside a {
+    color: var(--text-color)
+}
+
+aside a:visited {
+    color: var(--text-color)
+}
